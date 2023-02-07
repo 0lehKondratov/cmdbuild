@@ -1,5 +1,4 @@
 FROM tomcat:8-jre8-alpine
-MAINTAINER garudaru <garudaru@gmail.com>
 
 ARG  BIMSERVER=1.5.90 
 ARG  BIMSERVER_URL=https://github.com/opensourceBIM/BIMserver/releases/download/parent-$BIMSERVER/bimserverwar-$BIMSERVER.war

@@ -1,7 +1,6 @@
 #FROM java:8-jre
 #FROM develar/java
 FROM frolvlad/alpine-oraclejdk8:slim 
-MAINTAINER garudaru <garudaru@gmail.com>
 
 ENV CATALINA_HOME="/usr/local/tomcat" \
     TOMCAT_MAJOR="7" \

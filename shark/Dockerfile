@@ -1,5 +1,4 @@
 FROM tomcat:8-jre8-alpine
-MAINTAINER garudaru <garudaru@gmail.com>
 
 ENV CMDBUILD_VERSION="2.5.0" \ 
     LIB="http://jdbc.postgresql.org/download/postgresql-9.4.1208.jar"

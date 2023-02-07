@@ -1,5 +1,4 @@
 FROM tomcat:8-jre8-alpine
-MAINTAINER garudaru <garudaru@gmail.com>
 
 ENV GEOSERVER_DATA_DIR /opt/geoserver/data_dir 
 

@@ -1,6 +1,6 @@
 FROM tomcat:9.0.58-jdk17-openjdk-bullseye
 
-MAINTAINER garudaru <garudaru@gmail.com>
+
 
 WORKDIR $CATALINA_HOME
 
