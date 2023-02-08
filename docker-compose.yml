@@ -1,4 +1,4 @@
-version : '2'
+version : '3.9'
 
 services:
  cmdbuild:
@@ -38,9 +38,6 @@ services:
    - pgsqlv:/var/lib/postgresql/data
   networks:
    - cmdbuild-network
-
-
-
 
  shark:
   image: garudaru/shark:2.5
@@ -141,17 +138,24 @@ networks:
  
 volumes:
   cmdbv:
-   driver: local
+#    source: /opt/cmdbuild/cmdbv
+    driver: local
   cmdbuploadv:
-   driver: local
+#    source:  /opt/cmdbuild/cmdbuploadv
+    driver: local
   pgsqlv:
-   driver: local
+#    source:  /opt/cmdbuild/pgsqlv
+    driver: local
   geov:
-   driver: local
-  alfdatav:
-   driver: local
-  bimv:  
-   driver: local
+#    source:  /opt/cmdbuild/geov
+#    driver: local
+  alfdatav: 
+#    source: /opt/cmdbuild/alfdatav
+    driver: local
+  bimv:
+#    source:  /opt/cmdbuild/bimv
+    driver: local
   alfpgsqlv:
-   driver: local
-   
+#    source: /opt/cmdbuild/alfpgsqlv
+    driver: local
+
